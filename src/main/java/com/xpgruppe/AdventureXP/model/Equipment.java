@@ -17,5 +17,8 @@ public class Equipment {
 
     private String status;
 
+    @ManyToOne
+    @JoinColumn(name = "activity_id")
+    private Activity activity;
 
 }
