@@ -1,15 +1,10 @@
-
-<header th:fragment="header-element">
-
-<link th:href="@{/css/header.css}" rel="stylesheet"/>
-
-    <div class="header">
+    <div class="header" th:fragment="header-element">
+        <link th:href="@{/css/header.css}" rel="stylesheet"/>
         <ul>
-            <li><a th:href="@{/activityDetails}">Awesome company name</a></li>
-            <li><a href="news.asp">News</a></li>
-            <li><a href="contact.asp">Contact</a></li>
-            <li><a href="about.asp">About</a></li>
+            <li><a>Adventure Alley</a></li>
+            <div class="nav-center">
+                <li><a th:href="@{/katalog}">Katalog</a></li>
+                <li><a th:href="@{/leaderboard}">Leaderboard</a></li>
+            </div>
         </ul>
     </div>
-
-</header>
