@@ -1,16 +1,22 @@
 body {
-    background-image: url("../images/background_index.png");
+    background-image: url("../images/catalogueBackground.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
+.index_activities_loop, .add_new_activity_wrapper {
+    display: flex;
+    justify-content: center;
+
+}
+
 .index_activities {
-    padding: 5vw;
+    padding: 4vw;
     margin: 0 45px;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5vw;
+    gap: 3.5vw;
 }
 
 .activity,
@@ -22,11 +28,9 @@ body {
     align-items: stretch;
     box-sizing: border-box;
     box-shadow: 0 4px 10px rgba(114, 113, 113, 0.73);
+    margin-top: 12px;
 }
 
-.activity {
-    padding-top: 5px;
-}
 
 .activity h1,
 .add_new_activity h1 {
@@ -119,5 +123,5 @@ span {
 }
 
 span img {
-    width: 150px;
+    width: 200px;
 }
